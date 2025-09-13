@@ -1,17 +1,8 @@
-const monemt = require('moment');
+const moment = require('moment');
 
-function getCurrentDay() {
-    console.log(monemt().format('dddd'));
+function getDate() {
+    const formatted = moment().format('YYYY/MM/DD HH:mm:ss');
+    console.log(formatted);
 }
 
-function getCurrentMonth() {
-    console.log(monemt().format('MMMM'));
-}
-
-function getCurrentYear() {
-    console.log(monemt().format('YYYY'));
-}
-
-getCurrentDay();
-getCurrentMonth();
-getCurrentYear();
+getDate();
